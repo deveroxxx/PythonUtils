@@ -1,0 +1,4 @@
+do like this:
+https://esmithy.net/2015/05/05/rundebug-as-root-in-pycharm/ 
+
+but the python paths this way are messed up a bit so you can only run files from the root. (otherwise module not found etc.)
