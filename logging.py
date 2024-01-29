@@ -1,3 +1,8 @@
+class RelativePathFilter(logging.Filter):
+    def filter(self, record):
+        record.relativePath = os.path.relpath(record.pathname)
+        return True
+
 def apply_advanced_log_tracking():
     """Apply filter to all existing loggers, this way we can produce clickable logs for pyCharm"""
     for logger in logging.Logger.manager.loggerDict.values():
